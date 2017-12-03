@@ -1,2 +1,3 @@
-# website
-Zemit Official Website
+# Website
+
+Website for the Zemit project.
