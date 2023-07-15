@@ -7,7 +7,7 @@
 
       <v-row>
         <v-col v-for="(person, personIdx) in persons" :key="personIdx" cols="12" sm="6" md="4" lg="3">
-          <v-card>
+          <v-card :href="person.github" target="_blank">
             <v-img aspect-ratio="1" class="bw-hover" :src="person.picture" cover></v-img>
             <v-card-title class="text-primary">{{ person.name }}</v-card-title>
             <v-card-text class="mt-n2">{{ person.location }}</v-card-text>
@@ -20,8 +20,8 @@
 
 <script lang="ts" setup>
 const persons = [
-  { picture: 'https://avatars.githubusercontent.com/u/4306188?v=4', name: 'Julien Turbide', location: 'Canada' },
-  { picture: 'https://avatars.githubusercontent.com/u/10353756?v=4', name: 'Danny Coulombe', location: 'Mexico' },
+  { picture: 'https://avatars.githubusercontent.com/u/4306188?v=4', name: 'Julien Turbide', location: 'Canada', github: 'https://github.com/jturbide', },
+  { picture: 'https://avatars.githubusercontent.com/u/10353756?v=4', name: 'Danny Coulombe', location: 'Mexico', github: 'https://github.com/dannycoulombe', },
 ];
 </script>
 
