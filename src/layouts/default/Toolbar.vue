@@ -86,6 +86,7 @@
         variant="outlined"
         density="compact"
         prepend-inner-icon="mdi-magnify"
+        autofocus
         @keyup.enter="onKeyUpEnter"
       ></v-text-field>
 
