@@ -6,7 +6,7 @@
       <p class="my-8 text-body-1" style="max-width: 40rem">Zemit is a team of passionate developers from all around the world. We love building tools that make your life as a developer enjoyable, fun, and fulfilling. Follow us on Twitter and GitHub to keep up with what we're working on!</p>
 
       <v-row>
-        <v-col v-for="(person, personIdx) in persons" :key="personIdx" cols="12" sm="6" md="4" lg="3">
+        <v-col v-for="(person, personIdx) in persons" :key="personIdx" cols="12" sm="6" md="4" lg="3" xl="2">
           <v-card :href="person.github" target="_blank">
             <v-img aspect-ratio="1" class="bw-hover" :src="person.picture" cover></v-img>
             <v-card-title class="text-primary">{{ person.name }}</v-card-title>
